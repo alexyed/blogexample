@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInite32ebee3f6b8cae2eac29b704ee821f7
 {
     public static $prefixLengthsPsr4 = array (
+        'a' => 
+        array (
+            'app\\' => 4,
+        ),
         'P' => 
         array (
             'Phroute\\Phroute\\' => 16,
@@ -14,6 +18,10 @@ class ComposerStaticInite32ebee3f6b8cae2eac29b704ee821f7
     );
 
     public static $prefixDirsPsr4 = array (
+        'app\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
         'Phroute\\Phroute\\' => 
         array (
             0 => __DIR__ . '/..' . '/phroute/phroute/src/Phroute',

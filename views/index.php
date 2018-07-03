@@ -38,7 +38,7 @@
 		<div class="row">
 			<div class="col-md12">
 				<footer>
-					<a href="admin/index.php">Admin panel</a>
+					<a href="<?php echo BASE_URL; ?>admin">Admin panel</a>
 					
 				</footer>
 			</div>
