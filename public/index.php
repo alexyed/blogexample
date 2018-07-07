@@ -17,6 +17,9 @@ define('BASE_URL', $baseUrl);
 
 $route = $_GET['route'] ?? '/';
 
+
+// render used when it was'nt yet used twig
+/*
 function render($fileName, $params = []) {
 	//la función ob_star(); lo que hace es enviar las vistas al buffer y la función ob_get_clean(); lo que hace es que muestra los datos del buffer y los limpia. osea lo guarda internamente para despues enviar lo resultante 
 	ob_start();
@@ -25,7 +28,8 @@ function render($fileName, $params = []) {
 
 
 	return ob_get_clean();
-}
+}*/
+
 
 /* read phroute documentation*/
 use Phroute\Phroute\RouteCollector;
