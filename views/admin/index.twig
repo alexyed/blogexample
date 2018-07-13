@@ -1,10 +1,13 @@
-{% extends "layaout.twig" %}
+{% extends "layout.twig" %}
 
 {% block content %}
 		<ul>
 			<li>
 				<a href="{{ 'admin/post' | url }}">Manage Post</a>
 			</li>
+			<li>
+				<a href="{{ 'admin/users' | url }}">Manage Users</a>
+			</li>			
 		</ul>
 {% endblock %}
 

@@ -1,0 +1,33 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+	<h2>New User</h2>
+	<p>
+		<a class="btn btn-outline-secondary" href="{{ 'admin/users' | url }}">Back</a>
+		
+	</p>
+	{% if errors %}
+		{% include('partials/errors.twig') %}
+	{% endif%}
+	{% if result %}
+		<div class="alert alert-success">User Saved</div>
+	{% endif%}
+
+	<form method="post">
+		<div class="form-group">
+			<label for="inputNasme">Name</label>
+			<input class="form-control" type="text" name="name" id="inputName">
+		</div>
+		<div class="form-group">
+			<label for="inputEmail">Email</label>
+			<input class="form-control" type="text" name="email" id="inputEmail">
+		</div>
+		<div class="form-group">
+			<label for="inputPassword">Password</label>
+			<input class="form-control" type="password" name="password" id="inputPassword">
+		</div>
+		<br>
+		<input type="submit" class="btn btn-outline-primary" name="" value="Save">
+	</form>
+
+{% endblock %}
