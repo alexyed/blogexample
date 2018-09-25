@@ -3,6 +3,7 @@
 namespace app\controllers\admin;
 
 use app\controllers\BaseController;
+use app\models\User;
 
 class IndexController extends BaseController {
 
